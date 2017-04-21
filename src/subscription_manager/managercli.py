@@ -240,8 +240,8 @@ def get_installed_product_status(product_directory, entitlement_directory, uep, 
     """
     product_status = []
 
-    calculator = inj.require(inj.PRODUCT_DATE_RANGE_CALCULATOR, uep)
     sorter = inj.require(inj.CERT_SORTER)
+    calculator = inj.require(inj.PRODUCT_DATE_RANGE_CALCULATOR, uep)
     cert_filter = None
 
     if filter_string is not None:
